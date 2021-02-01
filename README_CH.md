@@ -24,10 +24,10 @@ cfm.run()
 
 ## 流程圖
 
-![initial](flow_chart.png)
+![initial](img/flow_chart.png)
 
 
 ## 相關的 Python 技能參考
 這張表主要是為了自我檢視使用（所以非常主觀）。
 
-![initial](skill_list.png)
+![initial](img/skill_list.png)

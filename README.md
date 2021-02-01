@@ -24,10 +24,10 @@ cfm.run()
 
 ## The flow chart
 
-![initial](flow_chart.png)
+![initial](img/flow_chart.png)
 
 
 ## Python skill reference
 For self assessment, I made a list as a reference. (And it's highly subjective)
 
-![initial](skill_list.png)
+![initial](img/skill_list.png)
