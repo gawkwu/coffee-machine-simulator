@@ -6,6 +6,7 @@ from enum import Enum, auto
 
 
 class Menu:
+    """ A pack of the choices and recipes. """
     class Choices(Enum):
         ESPRESSO = auto()
         LATTE = auto()
@@ -28,6 +29,7 @@ class Menu:
 
 
 class CoffeeMachine:
+    """ Simulate the behavior of a coffee machine. """
     class Command(Enum):
         BUY = auto()
         FILL = auto()
@@ -131,16 +133,15 @@ class CoffeeMachine:
                 print(f"Please enter a value in [{choices[0].value}, {choices[-1].value}]")
                 continue
 
-            shortage = self.get_shortage(choice)
-            shortage_str = ', '.join(shortage)
-            if shortage:
-                self.clerk_print(f"Sorry, not enough {shortage_str}!")
-            else:
-                self.clerk_print(f"It's {self.menu.cost[choice]} dollars.")
-                self.receive_money(choice)
-                print(f"You get a {choice.name.capitalize()}.")
-                self.consume_supplies(choice)
-            break
+        shortage = self.get_shortage(choice)
+        shortage_str = ', '.join(shortage)
+        if shortage:
+            self.clerk_print(f"Sorry, not enough {shortage_str}!")
+        else:
+            self.clerk_print(f"It's {self.menu.cost[choice]} dollars.")
+            self.receive_money(choice)
+            print(f"You get a {choice.name.capitalize()}.")
+            self.consume_supplies(choice)
         
     
     def _fill(self):
