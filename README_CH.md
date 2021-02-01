@@ -10,7 +10,14 @@
 3. 從機器中取出現金
 4. 離開並關閉機器
 
-## 關於
+## 畫面截圖
+![initial](img/demo.jpg)
+
+## 流程圖
+
+![initial](img/flow_chart.png)
+
+## 如何執行這個程式
 在本機端執行的方法 :
 ```
 python main.py
@@ -21,11 +28,6 @@ from coffeemachine import CoffeeMachine
 cfm = CoffeeMachine(water=400, milk=540, beans=120, cups=9, money=550)
 cfm.run()
 ```
-
-## 流程圖
-
-![initial](img/flow_chart.png)
-
 
 ## 相關的 Python 技能參考
 這張表主要是為了自我檢視使用（所以非常主觀）。

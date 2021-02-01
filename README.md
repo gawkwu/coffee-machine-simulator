@@ -10,7 +10,14 @@ It's allow user to:
 3. Take the money from machine.
 4. Exit and stop the machine.
 
-## About
+## Screenshot
+![initial](img/demo.jpg)
+
+## The flow chart
+
+![initial](img/flow_chart.png)
+
+## How to run this program
 Run this program locally by:
 ```
 python main.py
@@ -21,11 +28,6 @@ from coffeemachine import CoffeeMachine
 cfm = CoffeeMachine(water=400, milk=540, beans=120, cups=9, money=550)
 cfm.run()
 ```
-
-## The flow chart
-
-![initial](img/flow_chart.png)
-
 
 ## Python skill reference
 For self assessment, I made a list as a reference. (And it's highly subjective)
